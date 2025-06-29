@@ -12,6 +12,20 @@ export default function Home() {
           height={38}
           priority
         />
+        
+        {/* Stripe Test Section */}
+        <div className="text-center sm:text-left">
+          <h2 className="text-xl font-bold mb-4">Stripe Test</h2>
+          <p className="text-sm mb-4">Testing Stripe integration with Cloudflare build</p>
+          <a
+            href="/api/stripe-test"
+            target="_blank"
+            className="inline-block rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-blue-600 text-white gap-2 hover:bg-blue-700 font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
+          >
+            Test Stripe API
+          </a>
+        </div>
+
         <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2 tracking-[-.01em]">
             Get started by editing{" "}
