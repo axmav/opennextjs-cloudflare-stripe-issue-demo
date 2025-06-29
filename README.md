@@ -20,6 +20,7 @@ This repository demonstrates a **Stripe integration issue** when deploying Next.
 - **Error**: `Could not resolve "stripe"` during OpenNext build process for Pages API routes
 - **Specific Error**: `The module "./esm/stripe.esm.worker.js" was not found on the file system`
 - **Environment**: Cloudflare Workers via OpenNext
+- **Trigger**: Error appears after running `yarn preview`
 
 ### Current Configuration
 
@@ -47,13 +48,7 @@ This repository demonstrates a **Stripe integration issue** when deploying Next.
 First, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -81,7 +76,7 @@ To reproduce the issue:
 
 1. Install dependencies: `yarn install`
 2. Run the preview command: `yarn preview`
-3. Observe the build error related to Stripe module resolution for Pages API routes
+3. **The error appears after running `yarn preview`** - observe the build error related to Stripe module resolution for Pages API routes
 
 The error occurs during the OpenNext build process when bundling the server functions for Cloudflare Workers, specifically when processing the Pages API route.
 
